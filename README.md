@@ -2,34 +2,34 @@
 
 ## Setup
 
-1. Clone the repo
+1. Clone the repository.
 
-2. Install Packages
+2. Install the required packages:
 
    ```bash
    pnpm install
    ```
 
-3. Run the development server
+3. Start the development server:
 
    ```bash
    pnpm run dev
    ```
 
-4. Visit http://localhost:5173
+4. Open http://localhost:5173 in your browser.
 
 ## Technical Guidelines
 
-The project uses [React.js](https://react.dev) and [Typescript](https://www.typescriptlang.org) Template provided by [Vite](https://vitejs.dev). The choice of Typescript was necessary in-order to have better type-safety across the codebase.
+The project is built using [React.js](https://react.dev) and [TypeScript](https://www.typescriptlang.org) with the [Vite](https://vitejs.dev) template. TypeScript was chosen to ensure better type safety throughout the codebase.
 
 ### Design
 
-The project uses [shadcn UI](https://ui.shadcn.com) for ready-made components to have consistant design across the application.
+The project utilizes [shadcn UI](https://ui.shadcn.com) for pre-built components, ensuring consistent design across the application.
 
-### Type-safety
+### Type Safety
 
-[Eslint](https://eslint.org) has been utilised to check for linting warnings/errors for the projects before any code changes are published. This is achieved via git-hooks using [husky](https://typicode.github.io/husky/). Whenever the code changes are commited, the eslint checks are triggered ensuring consistant code and best-practices.
+[Eslint](https://eslint.org) is employed to catch linting warnings and errors before any code changes are published. This is enforced through git hooks, using [Husky](https://typicode.github.io/husky/). Whenever code is committed, eslint checks are automatically triggered to maintain consistency and adherence to best practices.
 
 ### Commits
 
-Each commit message is checked to have consistant and easy-to-understand message using git-hooks and [commitlint](https://commitlint.js.org).
+Commit messages are validated for clarity and consistency using git hooks and [commitlint](https://commitlint.js.org).
