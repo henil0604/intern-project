@@ -6,15 +6,15 @@
 
 2. Install the required packages:
 
-   ```bash
-   pnpm install
-   ```
+    ```bash
+    pnpm install
+    ```
 
 3. Start the development server:
 
-   ```bash
-   pnpm run dev
-   ```
+    ```bash
+    pnpm run dev
+    ```
 
 4. Open http://localhost:5173 in your browser.
 

@@ -4,19 +4,13 @@
 
 # Ignore files: 
 /public
-/src/assets/styles
-/src/index.css
-package.json
 package.lock.json
 
 tailwind.css
 .env
 
-
 /src/generated/types.ts
 /src/generated/graphql.schema.json
 /src/**/*.generated.ts
 
-.eslintrc.cjs
 pnpm-lock.yaml
-.prettierrc
