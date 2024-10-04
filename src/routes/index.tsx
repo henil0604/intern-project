@@ -5,6 +5,7 @@ import {
 } from "react-router-dom";
 
 import { AuthLoader, RootLayout } from "@/components/layouts/root";
+import { CONST } from "@/lib/const";
 
 export const router = createBrowserRouter(
 	createRoutesFromElements(
@@ -21,6 +22,15 @@ export const router = createBrowserRouter(
 					lazy={async () => {
 						return {
 							Component: (await import("@/routes/Home")).HomePage,
+						};
+					}}
+				/>
+				<Route
+					path={CONST.ROUTES.register()}
+					lazy={async () => {
+						return {
+							Component: (await import("@/routes/Auth/Register"))
+								.RegisterPage,
 						};
 					}}
 				/>
