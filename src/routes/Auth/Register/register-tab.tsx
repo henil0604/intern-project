@@ -80,6 +80,10 @@ export function RegisterTabs() {
 							<Label htmlFor="past-jobs">Pass Jobs</Label>
 							<Input id="past-jobs" defaultValue="Dev-Ops" />
 						</div>
+						<div className="space-y-1">
+							<Label htmlFor="past-jobs">Pass Jobs</Label>
+							<Input id="past-jobs" defaultValue="Dev-Ops" />
+						</div>
 					</CardContent>
 					<CardFooter>
 						<Button>Save changes</Button>
