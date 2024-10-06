@@ -11,9 +11,11 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
+import { InputFile } from "./file-input";
+
 export function RegisterTabs() {
 	return (
-		<Tabs defaultValue="person" className="w-[400px]">
+		<Tabs defaultValue="person" className="w-1/2">
 			<TabsList className="grid w-full grid-cols-2">
 				<TabsTrigger value="person">Person</TabsTrigger>
 				<TabsTrigger value="recruiter">Recruiter</TabsTrigger>
@@ -27,7 +29,7 @@ export function RegisterTabs() {
 							you're done.
 						</CardDescription>
 					</CardHeader>
-					<CardContent className="space-y-2">
+					<CardContent className="flex flex-row flex-wrap items-center justify-between space-y-2">
 						<div className="space-y-1">
 							<Label htmlFor="name">Name</Label>
 							<Input id="name" defaultValue="Pedro Duarte" />
@@ -81,8 +83,7 @@ export function RegisterTabs() {
 							<Input id="past-jobs" defaultValue="Dev-Ops" />
 						</div>
 						<div className="space-y-1">
-							<Label htmlFor="past-jobs">Pass Jobs</Label>
-							<Input id="past-jobs" defaultValue="Dev-Ops" />
+							<InputFile />
 						</div>
 					</CardContent>
 					<CardFooter>
@@ -90,27 +91,63 @@ export function RegisterTabs() {
 					</CardFooter>
 				</Card>
 			</TabsContent>
-			<TabsContent value="password">
+			<TabsContent value="recruiter">
 				<Card>
 					<CardHeader>
-						<CardTitle>Password</CardTitle>
+						<CardTitle>Recruiter</CardTitle>
 						<CardDescription>
 							Change your password here. After saving, you'll be
 							logged out.
 						</CardDescription>
 					</CardHeader>
-					<CardContent className="space-y-2">
+					<CardContent className="flex flex-row flex-wrap items-center justify-between space-y-2">
 						<div className="space-y-1">
-							<Label htmlFor="current">Current password</Label>
-							<Input id="current" type="password" />
+							<Label htmlFor="name">Name of the Company</Label>
+							<Input id="nameOfCompany" defaultValue="Ssessa" />
 						</div>
 						<div className="space-y-1">
-							<Label htmlFor="new">New password</Label>
-							<Input id="new" type="password" />
+							<Label htmlFor="role">Role</Label>
+							<Input id="role" defaultValue="Developer" />
+						</div>
+						<div className="space-y-1">
+							<Label htmlFor="location">Location</Label>
+							<Input id="location" defaultValue="Ghana" />
+						</div>
+						<div className="space-y-1">
+							<Label htmlFor="skills">Skills</Label>
+							<Input
+								id="skills"
+								defaultValue="React, Next.js, TailwindCSS"
+							/>
+						</div>
+						<div className="space-y-1">
+							<Label htmlFor="education">Education</Label>
+							<Input
+								id="education"
+								defaultValue="University of Ghana"
+							/>
+						</div>
+						<div className="space-y-1">
+							<Label htmlFor="qualification">Qualification</Label>
+							<Input
+								id="qualification"
+								defaultValue="Bachelor of Science"
+							/>
+						</div>
+						<div className="space-y-1">
+							<Label htmlFor="achievements">Achievements</Label>
+							<Input
+								id="achievements"
+								defaultValue="10 Projects Completed"
+							/>
+						</div>
+						<div className="space-y-1">
+							<Label htmlFor="types">Types</Label>
+							<Input id="types" defaultValue="Remote" />
 						</div>
 					</CardContent>
 					<CardFooter>
-						<Button>Save password</Button>
+						<Button>Save Changes</Button>
 					</CardFooter>
 				</Card>
 			</TabsContent>
