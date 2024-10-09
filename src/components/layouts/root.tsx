@@ -2,7 +2,7 @@ import { LoaderFunction, Outlet } from "react-router-dom";
 
 export const RootLayout: React.FC = () => {
 	return (
-		<div className="min-h-full min-w-full">
+		<div className="flex min-h-full min-w-full">
 			<Outlet />
 		</div>
 	);
